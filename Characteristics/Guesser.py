@@ -64,16 +64,19 @@ class TooManyFiles(Exception):
 	pass
 
 # t: train
+# T: train {input} epochs
 # r: reset then train
-# y: train {input} epochs
+# R: reset then train {input} epochs
 # q: quit
+
 # m: move box
-# s: save as {input}
-# a: save as {guessed}
-# x: execute
 # w: switch screen scale between 1 and 2
 # b: set position of button 1
 # n: set position of button 2
+
+# s: save as {input}
+# a: save as {guessed}
+# x: execute
 
 # g: guess
 # space: guess and click
@@ -191,7 +194,7 @@ def clickButton(catagoryToClick = 'undefined', needProb = True, doSave = False):
 
 # Options BC BR BT, GC GR GT, RC RR RT, PC PR PT, YC YR YT
 i = input("Feature: ")
-restriction = ("Shape" if i in ["Circular", "Rectangle", "Triangle"] else "Color", i)
+restriction = ("Shape" if i in ["Circular", "Rectangular", "Triangular"] else "Color", i)
 i=0
 catagory = ""
 probability = 0
