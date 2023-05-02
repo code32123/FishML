@@ -1,0 +1,23 @@
+if __name__ == '__main__':
+	print("***************Colored Font***************")
+	print("A helper file for colored fonts")
+	print("By Jimmy S.")
+	print("*************************************")
+
+def prRed(skk):			print("\033[91m {}\033[00m" .format(skk)) 
+def prGreen(skk):		print("\033[92m {}\033[00m" .format(skk)) 
+def prYellow(skk):		print("\033[93m {}\033[00m" .format(skk)) 
+def prLightPurple(skk):	print("\033[94m {}\033[00m" .format(skk)) 
+def prPurple(skk):		print("\033[95m {}\033[00m" .format(skk)) 
+def prCyan(skk):		print("\033[96m {}\033[00m" .format(skk)) 
+def prLightGray(skk):	print("\033[97m {}\033[00m" .format(skk)) 
+def prBlack(skk):		print("\033[98m {}\033[00m" .format(skk))
+
+def mkRed(skk):			return ("\033[91m {}\033[00m" .format(skk)) 
+def mkGreen(skk):		return ("\033[92m {}\033[00m" .format(skk)) 
+def mkYellow(skk):		return ("\033[93m {}\033[00m" .format(skk)) 
+def mkLightPurple(skk):	return ("\033[94m {}\033[00m" .format(skk)) 
+def mkPurple(skk):		return ("\033[95m {}\033[00m" .format(skk)) 
+def mkCyan(skk):		return ("\033[96m {}\033[00m" .format(skk)) 
+def mkLightGray(skk):	return ("\033[97m {}\033[00m" .format(skk)) 
+def mkBlack(skk):		return ("\033[98m {}\033[00m" .format(skk))
